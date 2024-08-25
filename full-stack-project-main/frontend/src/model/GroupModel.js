@@ -1,11 +1,12 @@
-export const Group = (id, name, role, groupPicture, members = 0, groupStatus, intro) => ({
+export const Group = (id, name, role, groupPicture, memberNumbers = 0, groupStatus, intro, members = []) => ({
     id,
     name,
     role,
     groupPicture,
-    members,
+    memberNumbers,
     groupStatus,
-    intro
+    intro,
+    members
 });
 
 export const modelgroups = [
@@ -14,18 +15,52 @@ export const modelgroups = [
         'RMIT Society',
         'Member',
         "/images/rmitlib.jpg",
-        22050,
+        15,
         'Private',
-        'This is a group for RMIT students to share their thoughts and ideas.'
+        'This is a group for RMIT students to share their thoughts and ideas.',
+        [
+            'John',
+            'Jane',
+            'Michael',
+            'Emily',
+            'David',
+            'Sarah',
+            'Daniel',
+            'Olivia',
+            'Matthew',
+            'Sophia',
+            'Andrew',
+            'Isabella',
+            'William',
+            'Ava',
+            'James'
+        ]
     ),
     Group(
         2,
         'RMIT MarketPlace',
         'Member',
         "/images/rmitb2.jpg",
-        1050,
+        15,
         'Private',
-        'This is a group for RMIT students to buy and sell their merchandises.'
+        'This is a group for RMIT students to buy and sell their merchandises.',
+        [
+            'John',
+            'Jane',
+            'Michael',
+            'Emily',
+            'David',
+            'Sarah',
+            'Daniel',
+            'Olivia',
+            'Matthew',
+            'Sophia',
+            'Andrew',
+            'Isabella',
+            'William',
+            'Ava',
+            'James'
+        ]
     )
     // {
     //     name: 'RMIT SSETS',
