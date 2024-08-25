@@ -1,0 +1,17 @@
+.removeButton {
+    background-color: #007bff;
+    border-color: #007bff;
+    height: 50px;
+    width: 100px;
+    border-radius: 10px;
+}
+
+.memberContainer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    padding: 10px;
+    border: 1px solid #007bff;
+    border-radius: 10px;
+    align-items: center;
+}
