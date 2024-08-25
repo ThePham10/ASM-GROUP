@@ -25,7 +25,7 @@ const GroupHeaderBox = ({ groupID }) => {
                         <span>
                             <a href={`/group${group.id}`} className="text-blue-500 hover:text-blue-700">{group.groupStatus} Group</a> 
                             &nbsp;
-                            <a href="GroupMembers" className="text-blue-500 hover:text-blue-700">{group.members} Members</a>
+                            <a href={`/groupmembers${group.id}`} className="text-blue-500 hover:text-blue-700">{group.memberNumbers} Members</a>
                             &nbsp;
                             <a href={`/aboutus${group.id}`} className="text-blue-500 hover:text-blue-700">About Us</a>
                         </span>
