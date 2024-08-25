@@ -9,6 +9,7 @@ import UserProfile from './pages/UserProfile';
 import Group from './pages/Group';
 import { modelgroups } from './model/GroupModel';
 import AboutUsPage from './pages/AboutUsPage';
+import MembersPage from './pages/MembersPage';
 
 function App() {
   return (
@@ -32,6 +33,13 @@ function App() {
             key={group.id}
             path={`/aboutus${group.id}`}
             element={<AboutUsPage groupID={group.id} />}
+          />
+        ))}
+        {modelgroups.map(group => (
+          <Route
+            key={group.id}
+            path={`/groupmembers${group.id}`}
+            element={<MembersPage groupID={group.id} />}
           />
         ))}
       </Routes>
